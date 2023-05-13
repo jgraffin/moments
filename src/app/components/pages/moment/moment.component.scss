@@ -1,0 +1,74 @@
+.moment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+
+  h1 {
+    margin-bottom: 1em;
+  }
+
+  img {
+    max-width: 500px;
+    margin-bottom: 0 auto 1em;
+  }
+
+  .about-comments,
+  .about-moment,
+  .about-actions {
+    padding-bottom: 1em;
+    padding: 1.2em;
+  }
+
+  .comment-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.4em 0.6em;
+    background: #dadada;
+    border-radius: 0.4em;
+    margin: 1em 0;
+    max-width: 300px;
+
+    p {
+      font-style: italic;
+      font-size: 0.8em;
+      margin-bottom: 0.5em;
+      position: relative;
+      padding: 0.4em 0.8em;
+
+      &::before,
+      &::after {
+        content: "\201C";
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: -4px;
+        font-size: 2em;
+      }
+
+      &::after {
+        content: "\201D";
+        left: auto;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: 0;
+      }
+
+      + p {
+        font-weight: bold;
+        margin-bottom: 0;
+        font-size: 0.6em;
+        font-style: normal;
+
+        &::before,
+        &::after {
+          content: "";
+        }
+      }
+    }
+  }
+}

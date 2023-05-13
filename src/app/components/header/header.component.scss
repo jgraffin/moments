@@ -1,0 +1,47 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-bottom: 1px solid #444;
+}
+
+.brand, .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand {
+  img {
+    width: 40px;
+    margin-right: 0.6em;
+  }
+
+  &:hover {
+    > {
+      h2 {
+        color: #dec129;
+      }
+    }
+  }
+}
+
+.links {
+  li {
+    margin-right: 1em;
+    list-style: none;
+  }
+
+  #add {
+    a {
+      color: #dec129;
+      padding: 0.2em 0.4em;
+
+      &:hover {
+        background-color: #eff;
+      }
+    }
+  }
+}
+
+

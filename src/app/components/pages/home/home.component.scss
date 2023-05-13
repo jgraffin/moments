@@ -1,0 +1,73 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    margin-bottom: 0.5em;;
+  }
+
+  .moments-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    .moment {
+      width: 32%;
+      margin-bottom: 1em;
+      text-align: center;
+
+      img {
+        width: 100%;
+        margin-bottom: 1em;
+      }
+
+      h3, p {
+        margin-bottom: 1em;
+      }
+
+      .date {
+        font-size: 0.7em;
+        font-style: italic;
+      }
+
+      a {
+        background-color: #dec129;
+        padding: 0.4em 0.8em;
+        border-radius: 0.4em;
+
+        &:hover {
+          color: #fafafa;
+          background-color: #222;
+        }
+      }
+    }
+  }
+
+  .search-container {
+    margin-bottom: 2em;
+    width: 100%;
+
+    form {
+      width: 30%;
+      position: relative;
+    }
+
+    fa-icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0.8em;
+    }
+
+    input {
+      width: 100%;
+      padding: 1em 1em 1em 3em;
+      border-radius: 0.4em;
+      border: 1px solid;
+    }
+  }
+}
